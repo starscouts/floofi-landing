@@ -50,8 +50,8 @@
             document.getElementById("mouse").style.top = (e.clientY - 32) + "px";
         }
 
-        document.getElementById("background").innerHTML = Array(10000).fill(null).map((_, i) => `
-        <div class="background-item" style="background-color: #111; border-radius: 999px;" id="background-${i}"></div>
+        document.getElementById("background").innerHTML = Array(2500).fill(null).map((_, i) => `
+            <div class="background-item" style="background-color: #111; border-radius: 999px;" id="background-${i}"></div>
         `).join("");
 
         setInterval(() => {
